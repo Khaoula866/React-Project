@@ -1,6 +1,5 @@
 import React from "react";
-import {NavLink } from "react-router-dom"
-
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -10,9 +9,10 @@ const Navbar = () => {
           <div className="col-10 mx-auto">
             <nav className="navbar navbar-expand-lg navbar-light">
               <div className="container-fluid">
-                <NavLink  exact className="navbar-brand" to="/">
-                  SweetHome
+                <NavLink exact className="navbar-brand" to="/">
+                  My Store
                 </NavLink>
+
                 <button
                   className="navbar-toggler"
                   type="button"
@@ -30,7 +30,9 @@ const Navbar = () => {
                 >
                   <ul className="navbar-nav ml-auto mb-2 mb-lg-0">
                     <li className="nav-item">
-                      <NavLink activeClassName="menu_active"  exact
+                      <NavLink
+                        activeClassName="menu_active"
+                        exact
                         className="nav-link active"
                         aria-current="page"
                         to="/"
@@ -39,12 +41,22 @@ const Navbar = () => {
                       </NavLink>
                     </li>
                     <li className="nav-item">
-                      <NavLink activeClassName="menu_active"  exact className="nav-link" to="/products">
+                      <NavLink
+                        activeClassName="menu_active"
+                        exact
+                        className="nav-link"
+                        to="/products"
+                      >
                         Products
                       </NavLink>
                     </li>
                     <li className="nav-item">
-                      <NavLink activeClassName="menu_active"  exact className="nav-link" to="/login">
+                      <NavLink
+                        activeClassName="menu_active"
+                        exact
+                        className="nav-link"
+                        to="/login"
+                      >
                         Login
                       </NavLink>
                     </li>
